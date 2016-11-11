@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="../../Content/Css/shared.css" type="text/css" />
+</head>
+<html>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="../../Application/app.js"></script>
+	<script type="text/javascript" src="../../Controller/homeController.js"></script>
+	<body>
+		<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		<div data-ng-include="'../Shared/header.html'"></div>		
+			First Name: <input type="text" data-ng-model="firstName"><br>
+			Last Name: <input type="text" data-ng-model="lastName"><br>
+			<br>
+			Full Name: {{ firstName + " " + lastName }}
+		</div>
+	</body>
+</html>
+
+	
